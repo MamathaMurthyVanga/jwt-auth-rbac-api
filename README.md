@@ -60,12 +60,12 @@ uvicorn main:app --reload
 ```
 
 
-Visit the docs at:
+Visit the docs at:                                                                                      
 Swagger UI: http://127.0.0.1:8000/docs
 
 ReDoc: http://127.0.0.1:8000/redoc
 
-Demo (Video Recording)
+Demo (Video Recording)                                                                                
 https://www.loom.com/share/cfe59ca4e421475f96749f2f6bca48f9?sid=a22d9823-a699-4eaf-9542-d0ed215eb6cc
 
 https://drive.google.com/file/d/1rBNC0ASUTslCEnWOZvReB0FcBsb7pUGz/view?usp=sharing
