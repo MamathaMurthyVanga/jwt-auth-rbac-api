@@ -29,7 +29,7 @@ This is a RESTful API built with FastAPI, SQLModel, and PostgreSQL that implemen
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/jwt-auth-rbac-api.git
+git clone https://github.com/MamathaMurthyVanga/jwt-auth-rbac-api
 ```
 
 
