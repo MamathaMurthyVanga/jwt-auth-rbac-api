@@ -25,7 +25,7 @@ This is a RESTful API built with FastAPI, SQLModel, and PostgreSQL that implemen
 
 Installation Steps
 Clone the repository
-
+'''bash
 git clone https://github.com/your-username/jwt-auth-rbac-api.git
 
 
