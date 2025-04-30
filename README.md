@@ -19,8 +19,8 @@ This is a RESTful API built with FastAPI, SQLModel, and PostgreSQL that implemen
 - **FastAPI**
 - **SQLModel**
 - **PostgreSQL**
-- **JWT (via `python-jose`)**
-- **Swagger UI** (auto-generated)
+- **JWT**
+- **Swagger UI** 
 
 ---
 
