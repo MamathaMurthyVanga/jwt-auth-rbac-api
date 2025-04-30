@@ -30,14 +30,19 @@ This is a RESTful API built with FastAPI, SQLModel, and PostgreSQL that implemen
 
 ```bash
 git clone https://github.com/your-username/jwt-auth-rbac-api.git
+```
 
 
 2. Create and activate virtual environment
+```bash
 python -m venv env
-env\Scripts\activate
+env\Scripts\activate 
+```
 
 3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 4. Create .env file
 Add the following variables to the .env file:
@@ -50,7 +55,9 @@ ACCESS_TOKEN_EXPIRE_MINUTES=30
 alembic upgrade head
 
 6. Start the server
+```bash
 uvicorn main:app --reload
+```
 
 
 Visit the docs at:
@@ -60,4 +67,6 @@ ReDoc: http://127.0.0.1:8000/redoc
 
 Demo (Video Recording)
 https://www.loom.com/share/cfe59ca4e421475f96749f2f6bca48f9?sid=a22d9823-a699-4eaf-9542-d0ed215eb6cc
+
+
 
