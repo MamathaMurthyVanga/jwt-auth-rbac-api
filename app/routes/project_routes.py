@@ -5,6 +5,7 @@ from app.dependencies.auth import require_role, get_current_user
 from sqlmodel import Session, select
 from app.db.database import get_session
 from app.db.database import get_session
+from fastapi import Query
 
 
 router = APIRouter()
@@ -27,9 +28,11 @@ def create_project(
 @router.get("/projects", response_model=list[ProjectRead])
 def get_all_projects(
     session: Session = Depends(get_session),
-    current_user = Depends(get_current_user)
+    current_user = Depends(get_current_user),
+    limit: int = Query(10, ge=0),
+    offset: int = Query(0, ge=0)
 ):
-    projects = session.exec(select(Project)).all()
+    projects = session.exec(select(Project).limit(limit).offset(offset)).all()
     return projects
 
 

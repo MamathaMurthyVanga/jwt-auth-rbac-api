@@ -56,7 +56,7 @@ alembic upgrade head
 
 6. Start the server
 ```bash
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
 
 

@@ -8,7 +8,7 @@ from app.db.database import engine
 from app.core.config import settings
 from app.core.security import decode_access_token
 
-# oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/login")
+
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/login")
 
 
@@ -30,6 +30,6 @@ def get_current_user(token: str = Depends(oauth2_scheme)) -> User:
 def require_role(role: str):
     def wrapper(user: User = Depends(get_current_user)):
         if user.role != role:
-            raise HTTPException(status_code=403, detail="Insufficient permissions")
+            raise HTTPException(status_code=403, detail="Insufficient permissions Accessed only for Admin users")
         return user
     return wrapper
